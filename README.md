@@ -2,10 +2,10 @@
 
 # cURL commands to test the API
 
-Get the Museum visitors with ignore case\n
+Get the Museum visitors with ignore case <br>
 curl --location --request GET 'http://localhost:3000/api/visitors?date=1491268718000&ignore=hellman_quon'
 
-Get the Museum visitors without ignore case\n
+Get the Museum visitors without ignore case <br>
 curl --location --request GET 'http://localhost:3000/api/visitors?date=1491268718000'
 
 # Sample data to import and test the API's from MongoDB
