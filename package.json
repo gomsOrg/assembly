@@ -1,0 +1,61 @@
+{
+  "name": "museum-visitors",
+  "version": "0.0.1",
+  "description": "Assembly service",
+  "main": "./app.js",
+  "scripts": {
+    "build": "rm -rf build && babel ./lib --out-dir dist",
+    "dist": "cross-env BUILD_ENV=production NODE_ENV=production npm run build",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "lint:ci": "eslint -f json -o eslint-report.json --ext=js .",
+    "test": "npm run lint && npm run test-unit:xml",
+    "test:base": "nyc --reporter=cobertura --reporter=lcov --reporter=text mocha --recursive --require @babel/register",
+    "test-unit:xml": "npm run test:base -- ./test --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/unit/results.xml",
+    "start-runnable": "babel-node lib/index-runnable",
+    "dist-runnable": "cross-env BUILD_ENV=production NODE_ENV=production npm run build-runnable"
+  },
+  "files": [
+    "dist/**/*.*"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.2.0",
+    "ajv": "^6.5.3",
+    "babel-inline-import-loader": "^0.1.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "chai": "3.5.0",
+    "chai-http": "^4.3.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.4.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-env": "^1.0.1",
+    "grunt-mocha-istanbul": "^5.0.2",
+    "grunt-mocha-test": "^0.13.3",
+    "istanbul": "^0.4.5",
+    "mocha": "^7.1.0",
+    "mocha-junit-reporter": "^1.23.3",
+    "nyc": "^15.0.0"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "museumData": {
+    "month": "Jan",
+    "year": 2016,
+    "museum": "visitor_center_avila_adobe",
+    "visitors": 7852
+  }
+}{
+  "museumData": {
+    "month": "Jan",
+    "year": 2016,
+    "museum": "hellman_quon",
+    "visitors": 4752
+  }
+}{
+  "museumData": {
+    "month": "Jan",
+    "year": 2016,
+    "museum": "america_tropical_interpretive_center",
+    "visitors": 845
+  }
+}{
+  "museumData": {
+    "month": "Apr",
+    "year": 2017,
+    "museum": "visitor_center_avila_adobe",
+    "visitors": 2345
+  }
+}{
+  "museumData": {
+    "month": "Apr",
+    "year": 2017,
+    "museum": "hellman_quon",
+    "visitors": 964
+  }
+}{
+  "museumData": {
+    "month": "Apr",
+    "year": 2017,
+    "museum": "america_tropical_interpretive_center",
+    "visitors": 3125
+  }
+}{
+  "museumData": {
+    "month": "Oct",
+    "year": 2018,
+    "museum": "visitor_center_avila_adobe",
+    "visitors": 745
+  }
+}{
+  "museumData": {
+    "month": "Oct",
+    "year": 2018,
+    "museum": "hellman_quon",
+    "visitors": 124
+  }
+}{
+  "museumData": {
+    "month": "Oct",
+    "year": 2018,
+    "museum": "america_tropical_interpretive_center",
+    "visitors": 654
+  }
+}{
+  "museumData": {
+    "month": "Jun",
+    "year": 2019,
+    "museum": "visitor_center_avila_adobe",
+    "visitors": 5142
+  }
+}{
+  "museumData": {
+    "month": "Jun",
+    "year": 2019,
+    "museum": "hellman_quon",
+    "visitors": 6541
+  }
+}{
+  "museumData": {
+    "month": "Jun",
+    "year": 2019,
+    "museum": "america_tropical_interpretive_center",
+    "visitors": 3241
+  }
+}{
+  "museumData": {
+    "month": "Feb",
+    "year": 2020,
+    "museum": "visitor_center_avila_adobe",
+    "visitors": 852
+  }
+}{
+  "museumData": {
+    "month": "Feb",
+    "year": 2020,
+    "museum": "hellman_quon",
+    "visitors": 963
+  }
+}{
+  "museumData": {
+    "month": "Feb",
+    "year": 2020,
+    "museum": "america_tropical_interpretive_center",
+    "visitors": 457
+  }
+}
